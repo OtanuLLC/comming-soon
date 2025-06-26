@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, Calendar, Edit3 } from 'lucide-react';
+import { Users, Calendar } from 'lucide-react';
 
 const CodeOfConduct: React.FC = () => {
   return (
@@ -23,136 +23,89 @@ const CodeOfConduct: React.FC = () => {
 
         {/* Content */}
         <div className="bg-white rounded-2xl shadow-lg border border-slate-200 p-8 md:p-12">
-          
-          {/* Placeholder Notice */}
-          <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 mb-8">
-            <div className="flex items-center space-x-3 mb-3">
-              <Edit3 className="text-yellow-600" size={20} />
-              <h3 className="text-lg font-semibold text-yellow-800">Content Placeholder</h3>
-            </div>
-            <p className="text-yellow-700 leading-relaxed">
-              This section contains sample content. Please replace with your actual Code of Conduct. 
-              You can edit this content directly in the <code className="bg-yellow-100 px-2 py-1 rounded text-sm">src/pages/CodeOfConduct.tsx</code> file.
-            </p>
-          </div>
-
           <div className="prose prose-slate max-w-none">
             
-            {/* YOUR CONTENT GOES HERE - Replace everything below with your actual code of conduct */}
+            {/* Header Section */}
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-slate-800 mb-4">Otanu Code of Conduct</h2>
+              <h3 className="text-xl font-semibold text-yellow-600 mb-6">Creating Space for Human Connection</h3>
+              <p className="text-slate-600 leading-relaxed">
+                At Otanu, we believe in the transformative power of face-to-face dialogue. Our platform is designed to facilitate thoughtful, respectful, and emotionally honest conversations among people from all backgrounds. To preserve this safe and welcoming space, all participants are expected to follow this Code of Conduct:
+              </p>
+            </div>
+
             <section className="mb-8">
-              <h2 className="text-2xl font-bold text-slate-800 mb-4">Our Commitment</h2>
-              <div className="bg-slate-50 border-l-4 border-yellow-400 p-4 rounded-r-lg">
-                <p className="text-slate-600 italic">
-                  [Write your commitment statement about creating an inclusive, welcoming community for all users.]
+              <h2 className="text-2xl font-bold text-slate-800 mb-4">1. Respect First and Always</h2>
+              <ul className="list-disc list-inside text-slate-600 space-y-2 ml-4">
+                <li>Treat everyone with kindness and dignity—regardless of race, gender, sexual orientation, religion, nationality, political beliefs, or personal history.</li>
+                <li>Listen with the intent to understand, not to respond.</li>
+                <li>Disagree respectfully. Debate ideas, never people.</li>
+              </ul>
+            </section>
+
+            <section className="mb-8">
+              <h2 className="text-2xl font-bold text-slate-800 mb-4">2. Be Present, Be Real</h2>
+              <ul className="list-disc list-inside text-slate-600 space-y-2 ml-4">
+                <li>Show up with sincerity and curiosity.</li>
+                <li>Speak from personal experience; use "I" statements to share your truth.</li>
+                <li>Avoid trolling, baiting, or playing devil's advocate for the sake of argument.</li>
+              </ul>
+            </section>
+
+            <section className="mb-8">
+              <h2 className="text-2xl font-bold text-slate-800 mb-4">3. Privacy is Sacred</h2>
+              <ul className="list-disc list-inside text-slate-600 space-y-2 ml-4">
+                <li>Do not record, screenshot, or share conversations without the explicit consent of all participants.</li>
+                <li>Do not ask for or share personal contact information during or after the chat.</li>
+                <li>What is said in the room stays in the room.</li>
+              </ul>
+            </section>
+
+            <section className="mb-8">
+              <h2 className="text-2xl font-bold text-slate-800 mb-4">4. No Harassment, Hate, or Harm</h2>
+              <p className="text-slate-600 leading-relaxed mb-4">
+                We have a zero-tolerance policy for:
+              </p>
+              <ul className="list-disc list-inside text-slate-600 space-y-2 ml-4 mb-4">
+                <li>Harassment, bullying, or intimidation.</li>
+                <li>Hate speech, slurs, or derogatory language.</li>
+                <li>Sexual misconduct or inappropriate behavior.</li>
+                <li>Threats, violent language, or incitement.</li>
+              </ul>
+              <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+                <p className="text-red-700 font-medium">
+                  Violation may result in immediate suspension or permanent removal from Otanu.
                 </p>
               </div>
             </section>
 
             <section className="mb-8">
-              <h2 className="text-2xl font-bold text-slate-800 mb-4">1. Our Values</h2>
-              <div className="bg-slate-50 border-l-4 border-yellow-400 p-4 rounded-r-lg">
-                <p className="text-slate-600 italic">
-                  [List your core community values: respect, inclusivity, collaboration, integrity, etc.]
-                </p>
-              </div>
+              <h2 className="text-2xl font-bold text-slate-800 mb-4">5. Participate With Integrity</h2>
+              <ul className="list-disc list-inside text-slate-600 space-y-2 ml-4">
+                <li>Be yourself—no impersonation, catfishing, or fake personas.</li>
+                <li>Do not use Otanu for solicitation, promotion, or recruitment.</li>
+                <li>Follow the spirit of the conversation prompts; don't derail or dominate.</li>
+              </ul>
             </section>
 
             <section className="mb-8">
-              <h2 className="text-2xl font-bold text-slate-800 mb-4">2. Expected Behavior</h2>
-              <div className="bg-slate-50 border-l-4 border-yellow-400 p-4 rounded-r-lg">
-                <p className="text-slate-600 italic">
-                  [Define what positive behavior looks like in your community: respectful communication, constructive feedback, etc.]
-                </p>
-              </div>
+              <h2 className="text-2xl font-bold text-slate-800 mb-4">6. Report What You See</h2>
+              <ul className="list-disc list-inside text-slate-600 space-y-2 ml-4 mb-4">
+                <li>If you witness a violation of this Code, please report it through the in-app feature or contact our support team.</li>
+                <li>We take all reports seriously and investigate thoroughly.</li>
+              </ul>
             </section>
 
             <section className="mb-8">
-              <h2 className="text-2xl font-bold text-slate-800 mb-4">3. Unacceptable Behavior</h2>
-              
-              <h3 className="text-xl font-semibold text-slate-800 mb-3">Harassment and Discrimination</h3>
-              <div className="bg-slate-50 border-l-4 border-yellow-400 p-4 rounded-r-lg mb-4">
-                <p className="text-slate-600 italic">
-                  [List behaviors that constitute harassment: offensive comments, threats, unwelcome attention, etc.]
-                </p>
-              </div>
-
-              <h3 className="text-xl font-semibold text-slate-800 mb-3">Disruptive Behavior</h3>
-              <div className="bg-slate-50 border-l-4 border-yellow-400 p-4 rounded-r-lg mb-4">
-                <p className="text-slate-600 italic">
-                  [Define disruptive behaviors: trolling, spamming, derailing conversations, etc.]
-                </p>
-              </div>
-
-              <h3 className="text-xl font-semibold text-slate-800 mb-3">Illegal or Harmful Activities</h3>
-              <div className="bg-slate-50 border-l-4 border-yellow-400 p-4 rounded-r-lg">
-                <p className="text-slate-600 italic">
-                  [List illegal activities and harmful behaviors that are prohibited.]
-                </p>
-              </div>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold text-slate-800 mb-4">4. Reporting and Enforcement</h2>
-              
-              <h3 className="text-xl font-semibold text-slate-800 mb-3">How to Report</h3>
-              <div className="bg-white rounded-lg p-4 border border-slate-200 mb-4">
-                <p className="text-slate-700 font-medium">Email: conduct@otanuapp.com</p>
-                <p className="text-slate-700 font-medium">Emergency: urgent@otanuapp.com</p>
-                <p className="text-slate-600 text-sm mt-2">
-                  [Replace with your actual contact information for reporting violations]
-                </p>
-              </div>
-
-              <h3 className="text-xl font-semibold text-slate-800 mb-3">Our Response Process</h3>
-              <div className="bg-slate-50 border-l-4 border-yellow-400 p-4 rounded-r-lg">
-                <p className="text-slate-600 italic">
-                  [Explain your process for handling reports: investigation timeline, privacy protection, follow-up, etc.]
-                </p>
-              </div>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold text-slate-800 mb-4">5. Consequences</h2>
-              <div className="bg-slate-50 border-l-4 border-yellow-400 p-4 rounded-r-lg">
-                <p className="text-slate-600 italic">
-                  [List potential consequences for violations: warnings, temporary suspension, permanent ban, legal action, etc.]
-                </p>
-              </div>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold text-slate-800 mb-4">6. Appeals Process</h2>
-              <div className="bg-slate-50 border-l-4 border-yellow-400 p-4 rounded-r-lg">
-                <p className="text-slate-600 italic">
-                  [Explain how users can appeal decisions and the timeline for appeals.]
-                </p>
-              </div>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold text-slate-800 mb-4">7. Scope</h2>
-              <div className="bg-slate-50 border-l-4 border-yellow-400 p-4 rounded-r-lg">
-                <p className="text-slate-600 italic">
-                  [Define where this code of conduct applies: your platform, events, social media, etc.]
-                </p>
-              </div>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold text-slate-800 mb-4">8. Contact Information</h2>
-              <div className="bg-white rounded-lg p-4 border border-slate-200">
-                <p className="text-slate-700 font-medium">Community Team: conduct@otanuapp.com</p>
-                <p className="text-slate-700 font-medium">Appeals Committee: appeals@otanuapp.com</p>
-                <p className="text-slate-700 font-medium">Emergency Contact: urgent@otanuapp.com</p>
-                <p className="text-slate-600 text-sm mt-2">
-                  [Replace with your actual contact information for community matters]
-                </p>
-              </div>
+              <h2 className="text-2xl font-bold text-slate-800 mb-4">7. Evolving Together</h2>
+              <p className="text-slate-600 leading-relaxed">
+                Otanu is a growing community and this Code may evolve. Feedback is welcome—help us build a better space for connection.
+              </p>
             </section>
 
             <div className="bg-yellow-50 rounded-lg p-6 border border-yellow-200 mt-8">
               <p className="text-yellow-800 font-medium text-center">
-                Thank you for helping us create a welcoming and inclusive community for everyone.
+                By joining a conversation on Otanu, you agree to uphold this Code of Conduct. Let's make this a space where everyone feels seen, heard, and safe.
               </p>
             </div>
 
