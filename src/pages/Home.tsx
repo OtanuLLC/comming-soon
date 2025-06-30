@@ -17,7 +17,7 @@ const Home: React.FC = () => {
           <div className="flex justify-center mb-8">
             <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-2xl p-2">
               <img 
-                src="/src/assets/Otanu Logo No Background.png" 
+                src="/src/assets/logo.png" 
                 alt="Otanu Logo" 
                 className="w-full h-full object-contain"
               />
