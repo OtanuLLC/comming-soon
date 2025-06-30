@@ -1,0 +1,3 @@
+/termsandconditions  /documents/termsandconditions.txt  200
+/privacypolicy       /documents/privacypolicy.txt       200
+/codeofconduct       /documents/codeofconduct.txt       200
