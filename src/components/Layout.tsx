@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Home, FileText, Shield, Users } from 'lucide-react';
+import { Home, FileText, Shield, Users, Mail } from 'lucide-react';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -13,7 +13,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     { path: '/', label: 'Home', icon: Home },
     { path: '/termsandconditions', label: 'Terms & Conditions', icon: FileText },
     { path: '/privacypolicy', label: 'Privacy Policy', icon: Shield },
-    { path: '/codeofconduct', label: 'Code of Conduct', icon: Users }
+    { path: '/codeofconduct', label: 'Code of Conduct', icon: Users },
+    { path: '/contact', label: 'Contact', icon: Mail }
   ];
 
   return (
@@ -93,7 +94,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div>
               <h3 className="text-white font-semibold mb-4">Legal</h3>
               <div className="space-y-2">
-                {navItems.slice(1).map(({ path, label }) => (
+                {navItems.slice(1, -1).map(({ path, label }) => (
                   <Link
                     key={path}
                     to={path}
@@ -108,7 +109,13 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div>
               <h3 className="text-white font-semibold mb-4">Contact</h3>
               <div className="space-y-2 text-slate-400">
-                <p>hello@otanuapp.com</p>
+                <Link
+                  to="/contact"
+                  className="block hover:text-white transition-colors duration-200"
+                >
+                  Get in Touch
+                </Link>
+                <p>info@otanuapp.com</p>
                 <p>Coming Soon</p>
               </div>
             </div>
